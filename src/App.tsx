@@ -7,7 +7,6 @@ import Home from './components/Home';
 import About from './components/About';
 import Contacts from './components/Contacts';
 
-
 class App extends React.Component<IAppProps, IAppState> {
   constructor(props: IAppProps) {
     super(props);
@@ -19,11 +18,19 @@ class App extends React.Component<IAppProps, IAppState> {
   render() {
     return (
       <Router>
-        <div>
+        <div className="container my-5">
           <nav>
-            <Link to="/">Главная</Link>
-            <Link to="/about">О нас</Link>
-            <Link to="/contacts">Контакты</Link>
+            <ul>
+              <li>
+                <Link to="/">Главная</Link>
+              </li>
+              <li>
+                <Link to="/about">О нас</Link>
+              </li>
+              <li>
+                <Link to="/contacts">Контакты</Link>
+              </li>
+            </ul>
           </nav>
           <Switch>
             <Route exact path="/" component={Home} />

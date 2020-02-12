@@ -1,0 +1,23 @@
+$theme-colors: (
+  'primary': #0091ea //Covalence Blue!  :D,
+);
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
