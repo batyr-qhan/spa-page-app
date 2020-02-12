@@ -1,7 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import axios from 'axios';
-import { link } from 'fs';
+import './about.css'
 
 class About extends React.Component<IAboutProps, IAboutState> {
   constructor(props: IAboutProps) {
@@ -22,7 +22,7 @@ class About extends React.Component<IAboutProps, IAboutState> {
   render() {
     console.log(this.state.users);
     return (
-      <ul>
+      <ul className='about_list'>
         {this.state.users.map((user: { name: React.ReactNode; }) => {
           return <li>{user.name}</li>;
         })}

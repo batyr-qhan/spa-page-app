@@ -1,0 +1,7 @@
+.about_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: #0091ea;
+  margin-top: 50px;
+}
